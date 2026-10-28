@@ -1,0 +1,196 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fff4f5;
+  color: #533b46;
+  font-family: Arial, sans-serif;
+  padding: 24px 16px;
+}
+
+.app {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 18px 0 26px;
+}
+
+.heart {
+  font-size: 44px;
+  color: #d87591;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #a67b89;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+h1 span {
+  color: #d87591;
+}
+
+.subtitle {
+  color: #977985;
+  font-size: 14px;
+}
+
+.water-card,
+.love-note {
+  background: #fffdfb;
+  border: 1px solid #f3dfe4;
+  border-radius: 24px;
+  padding: 25px 20px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.water-icon {
+  font-size: 42px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+#progress {
+  font-size: 13px;
+  color: #977985;
+}
+
+.progress-track {
+  height: 10px;
+  background: #f5e6eb;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 24px 0 12px;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #d87591;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.goal {
+  font-size: 12px;
+  color: #977985;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+button {
+  border: none;
+  border-radius: 14px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#add-water {
+  background: #d87591;
+  color: white;
+}
+
+.secondary {
+  background: #fae9ee;
+  color: #8f5269;
+}
+
+.love-note {
+  text-align: left;
+  line-height: 1.6;
+}
+
+.love-note span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #b46b84;
+}
+
+.love-note p {
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #a67b89;
+  padding: 10px;
+}
+
+.reminder-card {
+  background: #fffdfb;
+  border: 1px solid #f3dfe4;
+  border-radius: 24px;
+  padding: 25px 20px;
+  margin-bottom: 18px;
+}
+
+.reminder-card h2 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.reminder-description {
+  text-align: center;
+  color: #977985;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.reminder-card label {
+  display: block;
+  font-size: 13px;
+  margin: 16px 0 8px;
+  color: #795665;
+}
+
+.reminder-card input,
+.reminder-card select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #f0d5de;
+  border-radius: 12px;
+  background: #fff8fa;
+  color: #533b46;
+  font: inherit;
+}
+
+#enable-reminders,
+#pause-reminders {
+  width: 100%;
+  margin-top: 14px;
+}
+
+#reminder-status {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #977985;
+  margin-top: 18px;
+}

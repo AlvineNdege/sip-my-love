@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff4f5">
+  <title>Sip, My Love 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="heart">♡</div>
+      <p class="eyebrow">A LITTLE REMINDER FROM YOUR PERSON</p>
+      <h1>Sip, My Love <span>💗</span></h1>
+      <p class="subtitle">Take a little sip for me, beautiful.</p>
+    </header>
+
+    <section class="water-card">
+      <p class="eyebrow">YOUR DAILY HYDRATION</p>
+      <div class="water-icon">💧</div>
+      <h2><span id="count">0</span> ml</h2>
+      <p id="progress">Every little sip counts.</p>
+
+      <div class="progress-track">
+        <div id="progress-fill"></div>
+      </div>
+
+      <p class="goal">Daily target: <span id="goal">2000</span> ml</p>
+
+      <div class="actions">
+        <button id="add-water">+ Drink 250 ml 💧</button>
+        <button id="undo-water" class="secondary">Undo last sip</button>
+      </div>
+    </section>
+    
+<section class="reminder-card">
+  <p class="eyebrow">♡ A GENTLE LITTLE NUDGE</p>
+  <h2>Remind me, love 💗</h2>
+  <p class="reminder-description">
+    A little sip, a little self-care.
+  </p>
+
+  <label for="start-time">Start reminding me</label>
+  <input type="time" id="start-time" value="09:00">
+
+  <label for="end-time">Stop reminding me</label>
+  <input type="time" id="end-time" value="21:00">
+
+  <label for="reminder-interval">Remind me every</label>
+  <select id="reminder-interval">
+    <option value="1">1 minute (test)</option>
+    <option value="30">30 minutes</option>
+    <option value="60" selected>1 hour</option>
+    <option value="90">1 hour 30 minutes</option>
+  </select>
+
+  <button id="enable-reminders">Turn on reminders ♡</button>
+  <button id="pause-reminders" class="secondary">Pause reminders</button>
+
+  <p id="reminder-status" role="status">
+    Your reminders are currently off.
+  </p>
+</section>
+
+
+    <section class="love-note">
+      <span>💌 A NOTE FOR YOU</span>
+      <p id="message">
+        Your wellbeing matters to me. Don't forget to take care of yourself.
+      </p>
+    </section>
+
+    <footer>Made with love, just for you ♡</footer>
+  </main>
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("Sip, My Love is ready!"))
+        .catch(error => console.error("Service worker error:", error));
+    });
+  }
+</script>
+</body>
+</html>
